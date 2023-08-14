@@ -1,0 +1,45 @@
+Boot and Microservices
+=========================
+1.spring boot core, AOP, data (jdbc template, data jpa)- good
+2.spring boot web mvc and rest api (basics)
+3.Hibernate and database basics - mandate
+4.java17 and design patterns
+====================================================
+
+=> Boot Data JPA
+=> Boot Rest API
+=> Microservices
+	=> Micro service communications uisng Rabbit MQ and Kafka
+=> Microservices cloud
+	=> Feign client
+	=> Config server and Config client (cloud bus)
+	=> Centralising configuration through git
+	=> Eureka Service Discovery
+	=> API Gateways (Routings)
+	=> Fallback operations 
+	=> Central logging
+
+====================================================================
+
+Software list
+================
+1.JDK 17 or above
+2.Eclipse for Java EE / IntelliJ Idea / STS
+3.MongoDB or MYSQL8 database
+4.Postman
+5.git
+6.Rabbit MQ and Apache Kafka for message brokers
+
+==========================
+
+
+
+
+
+
+
+
+
+
+
+
