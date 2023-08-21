@@ -1,4 +1,4 @@
-GitRepositoriesView.GitDirectories=/Users/praveen/training/microservices-aug/.git\:
-GitRepositoriesView.GitDirectories.relative=/Users/praveen/training/microservices-aug/.git\:
+GitRepositoriesView.GitDirectories=/Users/praveen/training/microservices-aug/.git\:/Users/praveen/training/adm-microservices-b2/.git\:
+GitRepositoriesView.GitDirectories.relative=/Users/praveen/training/microservices-aug/.git\:/Users/praveen/training/adm-microservices-b2/.git\:
 core_autoIgnoreDerivedResources=false
 eclipse.preferences.version=1
