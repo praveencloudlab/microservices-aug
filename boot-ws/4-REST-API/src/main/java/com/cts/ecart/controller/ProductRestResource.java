@@ -14,6 +14,7 @@ import com.cts.ecart.model.Product;
 @RestController
 public class ProductRestResource {
 	
+	//monolithic 
 	
 	@GetMapping("/{id}")
 	public String f1(@PathVariable int id) {
