@@ -47,7 +47,6 @@ public class CategoryResource {
 	public List<Category> listAllCategories(){
 		return categoryRepository.findAll();
 	}
-	
 
 	// gel all brands
 	@GetMapping("/brands")

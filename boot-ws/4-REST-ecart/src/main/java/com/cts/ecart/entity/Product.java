@@ -1,6 +1,7 @@
 package com.cts.ecart.entity;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -17,10 +18,10 @@ public class Product {
 	private int rating;
 	private String keywords;
 
-	@OneToOne
+	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "price_id")
 	private Price price;
-	@OneToOne
+	@OneToOne(fetch = FetchType.EAGER)
 	@JoinColumn(name = "stock_id")
 	private Stock stock;
 
@@ -64,20 +65,25 @@ public class Product {
 		this.keywords = keywords;
 	}
 
-	public Price getPrice() {
-		return price;
-	}
+	
 
 	public void setPrice(Price price) {
 		this.price = price;
 	}
 
-	public Stock getStock() {
-		return stock;
-	}
-
+	
 	public void setStock(Stock stock) {
 		this.stock = stock;
+	}
+	
+	
+
+	public Price getPrice() {
+		return price;
+	}
+
+	public Stock getStock() {
+		return stock;
 	}
 
 	@Override
@@ -85,5 +91,7 @@ public class Product {
 		return "Product [productId=" + productId + ", productTitle=" + productTitle + ", description=" + description
 				+ ", rating=" + rating + ", keywords=" + keywords + ", price=" + price + ", stock=" + stock + "]";
 	}
+
+	
 
 }
