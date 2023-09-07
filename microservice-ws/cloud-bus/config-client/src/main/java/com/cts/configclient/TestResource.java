@@ -13,9 +13,28 @@ public class TestResource {
 	@Value("${color}")
 	private String colorName;
 	
+	@Value("${name}")
+	private String personName;
+	
 	@GetMapping
 	public String getColor() {
 		return "Favorate Color is "+colorName;
 	}
+	
+	
+	@GetMapping("/name")
+	public String getName() {
+		return personName;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }
